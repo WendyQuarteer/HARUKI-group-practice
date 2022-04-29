@@ -12,6 +12,19 @@
 .cntctform .cntctinfo .gmap {
 
 }
+
+#age{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+}
 /*-----------this code is to make all the columns in row same height-----------------*/
 /*.row{
     overflow: hidden;

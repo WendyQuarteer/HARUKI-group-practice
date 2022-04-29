@@ -100,26 +100,52 @@
 </div>
 <!----------------------------- FORMS--------------------------------------->
 <div class="container align-self-center" style="margin: 10px;padding: 20px; border: 1px solid">
-    <form class="row align-items-center justify-items-center">
-        <div class="col-6 col-md-2">
-            <label for="firstname">First Name</label>
+    <form class="align-items-center justify-items-center">
+        <div class="row align-items-center">
+            <div class="col-6 col-md-2">
+                <label for="firstname">First Name</label>
+            </div>
+            <div class="col-6 col-md-3">
+                <input class="w-100 form-control" type="text" placeholder="Your name here" id="firstname">
+            </div>
+            <div class="col-6 col-md-2">
+                <label for="lastname">Last Name</label>
+            </div>
+            <div class="col-6 col-md-3">
+                <input class="w-100 form-control" type="text" placeholder="Your last name here" id="lastname">
+            </div>
+            <div class="col-6 col-md-2">
+                <select class="form-select w-100" aria-label="Default select">
+                    <option selected>Select your gender</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
         </div>
-        <div class="col-6 col-md-3">
-            <input class="w-100" type="text" placeholder="Your name here" id="firstname">
-        </div>
-        <div class="col-6 col-md-2">
-            <label for="lastname">Last Name</label>
-        </div>
-        <div class="col-6 col-md-3">
-            <input class="w-100" type="text" placeholder="Your last name here" id="lastname">
-        </div>
-        <div class="col-6 col-md-2">
-            <select class="form-select w-100" aria-label="Default select example">
-                <option selected>Select your gender</option>
-                <option value="1">Female</option>
-                <option value="2">Male</option>
-                <option value="3">Other</option>
-            </select>
+        <hr>
+        <div class="row align-items-center">
+            <div class="col col-md-4">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="example@somewebsite.com">
+            </div>
+            <div class="col-5 col-md-1">
+                <label for="age" class="form-label">Your age</label>
+                <input type="number" class="form-control" id="age" placeholder="18" maxlength="2" min="18" max="99">
+            </div>
+            <div class="col-7 col-md-3">
+                <label for="phone" class="form-label">Please enter your phone number</label>
+                <input type="tel" class="form-control" id="phone" placeholder="0123456789">
+            </div>
+            <div class="col col-md-4">
+                <label for="subject" class="form-label">Why do you need our help?</label>
+                <select class="form-select w-100" aria-label="Default select" id="subject">
+                    <option selected>Please choose a subject</option>
+                    <option value="1">sub 1</option>
+                    <option value="2">sub 2</option>
+                    <option value="3">sub 3</option>
+                </select>
+            </div>
         </div>
     </form>
 </div>
