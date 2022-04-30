@@ -1,1 +1,17 @@
 @import "style.css";
+
+$textColor = black;
+$backgroundColor = aliceblue;
+
+body {
+  button {
+    color: $textcolor;
+    background-color: $backgroundColor;
+    &:hover {
+      background: blue;
+    }
+  }
+}
+.container button{
+  background-color: aqua;
+}
