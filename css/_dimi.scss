@@ -14,11 +14,12 @@ $spinner-border-width-sm: .2em;
 
 @keyframes spinner-grow {
   0% {
+    opacity: 50;
     transform: scale(0);
   }
   50% {
-    opacity: 1;
-    transform: none;
+    opacity: 50;
+    transform: scale(2);
   }
 }
 
@@ -40,7 +41,7 @@ $spinner-border-width-sm: .2em;
 
 .btn{
    &:hover {
-     @include change-colors(white, red);
+     @include change-colors(yellow, red);
     }
 }
 .badge{

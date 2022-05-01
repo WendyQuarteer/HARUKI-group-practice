@@ -1,4 +1,11 @@
-
+const delay = ms => new Promise(res => setTimeout(res, ms));
+function wait(ms){
+    var start = new Date().getTime();
+    var end = start;
+    while(end < start + ms) {
+        end = new Date().getTime();
+    }
+}
 function Clicked_Wendy() {
     $counterBadge = document.getElementById("counterBadge1");
     console.log("Wendy: " + $counterBadge.textContent);
@@ -24,14 +31,14 @@ function  Clicked_Victor() {
 
 function  Clicked_Shiva() {
     $counterBadge3 = document.getElementById('counterBadge3');
-    $counterBadge3.onmouseenter = function (){
-        $counterBadge3.style = "color:bg-light";
-    };
-    console.log("Shiva: " + $counterBadge3.textContent);
-    $counterBadge3.textContent = parseInt($counterBadge3.textContent);
-    if ($counterBadge3.textContent>0){
-        $counterBadge3.textContent = parseInt($counterBadge3.textContent)-1;
-    } else {
+//    $counterBadge3.onmouseenter = function (){
+ //       $counterBadge3.style = "color:bg-light";
+//    };
+    for (let i=50;i>0;i--) {
+        wait(50);
+        $counterBadge3.innerText = parseInt(i);
+    }
+    if ($counterBadge3.textContent == 1){
         window.location.href = '/contact.html';
     }
 

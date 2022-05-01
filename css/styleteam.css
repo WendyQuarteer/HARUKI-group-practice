@@ -1,3 +1,18 @@
+@keyframes spinner-border {
+  to {
+    transform: rotate(360deg) /* rtl:ignore */;
+  }
+}
+@keyframes spinner-grow {
+  0% {
+    opacity: 50;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 50;
+    transform: scale(2);
+  }
+}
 .card:hover {
   color: blueviolet;
 }
@@ -7,8 +22,13 @@
 }
 
 .btn:hover {
-  background-color: white;
+  background-color: yellow;
   color: red;
+}
+
+.badge {
+  color: yellow;
+  background-color: dimgray;
 }
 
 /*# sourceMappingURL=styleteam.css.map */
