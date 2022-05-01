@@ -1,17 +1,14 @@
-/* Error: expected "{".
- *    ,
- * 16 | =======
- *    |        ^
- *    '
- *   _dimi.scss 16:8  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a    \2577 \a 16 \2502  =======\d\a    \2502         ^\a    \2575 \a   _dimi.scss 16:8  root stylesheet';
+.card:hover {
+  color: blueviolet;
 }
+.card:hover .btn:hover {
+  background-color: white;
+  color: red;
+}
+
+.btn:hover {
+  background-color: white;
+  color: red;
+}
+
+/*# sourceMappingURL=styleteam.css.map */

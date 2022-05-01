@@ -6,19 +6,16 @@
 .card {
   &:hover {
     color: blueviolet;
-<<<<<<< HEAD
     .btn {
       &:hover {
         @include change-colors(white, red);
       }
     }
   }
-=======
-  }
 }
+
 .btn{
    &:hover {
      @include change-colors(white, red);
     }
->>>>>>> c856df004205cbb0b8f6cd4a03073ff68f677f30
 }
