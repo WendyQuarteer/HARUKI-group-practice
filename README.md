@@ -27,7 +27,11 @@ Group-practice assignment made by Dimi, Shiva, Wendy, Victor
     afterwards press the confirm merge button and be done with it.
  
 1. after the merge has completed feel free to delete the no longer necessary branch
- ---
+1. to revert back from a merge type
+
+```bash
+        git merge --abort
+```
 
 
 
