@@ -14,8 +14,8 @@ function Clicked_Wendy() {
         $counterBadge.textContent = parseInt($counterBadge.textContent)+1;
     } else {
         window.location.href = '/index.html';
-    };
-};
+    }
+}
 function  Clicked_Victor() {
     $counterBadge2 = document.getElementById('counterBadge2');
     console.log("Victor: " + $counterBadge2.textContent);
@@ -34,6 +34,7 @@ function  Clicked_Shiva() {
         $counterBadge3.innerText = parseInt(i);
     }
     if ($counterBadge3.textContent == 1){
+        wait(1500);
         window.location.href = '/contact.html';
     }
 }
