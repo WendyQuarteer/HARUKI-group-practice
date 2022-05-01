@@ -15,15 +15,20 @@
 }
 .card:hover {
   color: blueviolet;
+  font-size: large;
 }
-.card:hover .btn:hover {
-  animation-name: inline-ulba957;
-  animation-duration: 3s;
+.card:hover .btn {
+  animation-name: inline-ukwpz9d;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
   background-color: white;
   color: red;
+  font-size: larger;
 }
-@keyframes inline-ulba957 {
+.card:hover .btn::after {
+  background-color: #F07167;
+}
+@keyframes inline-ukwpz9d {
   from {
     background-color: yellow;
   }

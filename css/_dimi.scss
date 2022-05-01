@@ -10,7 +10,15 @@ $light-background:        #f2ece4;
 $light-text:              #036;
 $dark-background:         #6b717f;
 $dark-text:               #d2e1dd;
+// Horizontal gradient, from left to right
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+@mixin gradient-x($start-color: $gray-300, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
 
+  .body{
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  }
+}
 @keyframes spinner-border {
   to { transform: rotate(360deg) #{"/* rtl:ignore */"}; }
 }
@@ -47,18 +55,23 @@ $dark-text:               #d2e1dd;
 
   &:hover {
     color: blueviolet;
+    font-size: large;
     .btn {
-      &:hover {
-        @include inline-animation(3s) {
+      //&:hover {
+      &::after{
+        //content: "wow groovy";
+        background-color: #F07167;
+      }
+        @include inline-animation(5s) {
           from { background-color: yellow }
           to { background-color: green }
         }
         @include change-colors(white, red);
+        font-size: larger;
       }
     }
   }
 
-}
 
 .btn{
    &:hover {
