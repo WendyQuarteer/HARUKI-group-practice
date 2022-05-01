@@ -1,30 +1,40 @@
 .gmap{
-    background-color: #FDFCDC;
+    background-color: #00A5CF;
 }
 .cntctinfo {
-    background-color: #FED9B7;
+    background-color: #92E6DA;
 }
 
 .cntctform{
-    background-color: #F07167;
+    background-color: #7AE582;
 }
 
 .cntctform .cntctinfo .gmap {
 
 }
 /*--------------this part is a failed attempt to remove arrows from age input-----------*/
-#age{
+/*#age {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* Firefox */
+!* Firefox *!
 input[type=number] {
     -moz-appearance: textfield;
+}*/
+
+
+.navbar {
+    background-color: #9FFFCB;
 }
+
+.navimg{
+    height: 50px;
 }
+
+
 /*-----------this code is to make all the columns in row same height-----------------*/
 /*.row{
     overflow: hidden;
