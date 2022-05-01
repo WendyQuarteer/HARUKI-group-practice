@@ -34,8 +34,8 @@ function  Clicked_Shiva() {
 //    $counterBadge3.onmouseenter = function (){
  //       $counterBadge3.style = "color:bg-light";
 //    };
-    for (let i=50;i>0;i--) {
-        wait(50);
+    for (let i=5;i>0;i--) {
+        wait(300);
         $counterBadge3.innerText = parseInt(i);
     }
     if ($counterBadge3.textContent == 1){
