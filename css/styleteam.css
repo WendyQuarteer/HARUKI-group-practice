@@ -18,7 +18,7 @@
   font-size: large;
 }
 .card:hover .btn {
-  animation-name: inline-ukwpz9d;
+  animation-name: inline-utjqw6a;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   background-color: white;
@@ -28,7 +28,7 @@
 .card:hover .btn::after {
   background-color: #F07167;
 }
-@keyframes inline-ukwpz9d {
+@keyframes inline-utjqw6a {
   from {
     background-color: yellow;
   }

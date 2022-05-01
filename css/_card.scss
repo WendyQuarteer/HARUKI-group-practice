@@ -9,13 +9,8 @@
         //content: "wow groovy";
         background-color: #F07167;
       }
-      @include inline-animation(5s) {
-        from { background-color: yellow }
-        to { background-color: green }
-      }
-      @include change-colors(white, red);
-      font-size: larger;
     }
+    @use change-colors(white, red);
   }
 }
 
