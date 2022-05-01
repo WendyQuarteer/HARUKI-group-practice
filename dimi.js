@@ -3,7 +3,7 @@ function Clicked_Wendy() {
     $counterBadge = document.getElementById("counterBadge1");
     console.log("Wendy: " + $counterBadge.textContent);
     $counterBadge.textContent = parseInt($counterBadge.textContent);
-    if ($counterBadge.textContent<=10){
+    if ($counterBadge.textContent<=4){
         $counterBadge.textContent = parseInt($counterBadge.textContent)+1;
     } else {
         window.location.href = '/index.html';
@@ -17,7 +17,6 @@ function  Clicked_Victor() {
     if ($counterBadge2.textContent>=5){
         $counterBadge2.textContent = parseInt($counterBadge2.textContent)-5;
     } else {
-        // window.location.href = '/mindandbody.html';
         window.location.href = "/mindandbody.html"
     }
 
@@ -33,7 +32,6 @@ function  Clicked_Shiva() {
     if ($counterBadge3.textContent>0){
         $counterBadge3.textContent = parseInt($counterBadge3.textContent)-1;
     } else {
-        // window.location.href = '/contact.html';
         window.location.href = '/contact.html';
     }
 
