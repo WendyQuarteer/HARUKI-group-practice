@@ -1,17 +1,15 @@
-@import "style.css";
+@mixin change-colors($bg, $color){
+  background-color: $bg;
+  color: $color;
+}
 
-$textColor = black;
-$backgroundColor = aliceblue;
-
-body {
-  button {
-    color: $textcolor;
-    background-color: $backgroundColor;
-    &:hover {
-      background: blue;
-    }
+.card {
+  &:hover {
+    color: blueviolet;
   }
 }
-.container button{
-  background-color: aqua;
+.btn{
+   &:hover {
+     @include change-colors(white, red);
+    }
 }
