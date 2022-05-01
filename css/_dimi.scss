@@ -3,7 +3,6 @@ $spinner-height:          $spinner-width;
 $spinner-vertical-align:  -.125em;
 $spinner-border-width:    .25em;
 $spinner-animation-speed: .95s;
-
 $spinner-width-sm:        1rem;
 $spinner-height-sm:       $spinner-width-sm;
 $spinner-border-width-sm: .2em;
@@ -26,6 +25,17 @@ $dark-text:               #d2e1dd;
     transform: scale(2);
   }
 }
+@mixin inline-animation($duration) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+}
 
 
 @mixin change-colors($bg, $color){
@@ -34,14 +44,20 @@ $dark-text:               #d2e1dd;
 }
 
 .card {
+
   &:hover {
     color: blueviolet;
     .btn {
       &:hover {
+        @include inline-animation(3s) {
+          from { background-color: yellow }
+          to { background-color: green }
+        }
         @include change-colors(white, red);
       }
     }
   }
+
 }
 
 .btn{

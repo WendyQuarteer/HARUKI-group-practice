@@ -15,7 +15,6 @@ function Clicked_Wendy() {
     } else {
         window.location.href = '/index.html';
     };
-
 };
 function  Clicked_Victor() {
     $counterBadge2 = document.getElementById('counterBadge2');
@@ -26,14 +25,10 @@ function  Clicked_Victor() {
     } else {
         window.location.href = "/mindandbody.html"
     }
-
 }
 
 function  Clicked_Shiva() {
     $counterBadge3 = document.getElementById('counterBadge3');
-//    $counterBadge3.onmouseenter = function (){
- //       $counterBadge3.style = "color:bg-light";
-//    };
     for (let i=5;i>0;i--) {
         wait(300);
         $counterBadge3.innerText = parseInt(i);
@@ -41,5 +36,4 @@ function  Clicked_Shiva() {
     if ($counterBadge3.textContent == 1){
         window.location.href = '/contact.html';
     }
-
 }

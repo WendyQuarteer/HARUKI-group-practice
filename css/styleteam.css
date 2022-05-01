@@ -17,8 +17,19 @@
   color: blueviolet;
 }
 .card:hover .btn:hover {
+  animation-name: inline-ulba957;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
   background-color: white;
   color: red;
+}
+@keyframes inline-ulba957 {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: green;
+  }
 }
 
 .btn:hover {
