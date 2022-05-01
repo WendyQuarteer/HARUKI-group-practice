@@ -1,0 +1,41 @@
+@keyframes spinner-border {
+  to { transform: rotate(360deg) #{"/* rtl:ignore */"}; }
+}
+
+@keyframes spinner-grow {
+  0% {
+    opacity: 50;
+    transform: scale(0);
+  }
+  50% {
+    opacity: 50;
+    transform: scale(2);
+  }
+}
+@mixin inline-animation($duration) {
+  $name: inline-#{unique-id()};
+
+  @keyframes #{$name} {
+    @content;
+  }
+
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-iteration-count: infinite;
+}
+
+
+@mixin change-colors($bg, $color){
+  background-color: $bg;
+  color: $color;
+}
+
+// Horizontal gradient, from left to right
+//
+// Creates two color stops, start and end, by specifying a color and position for each color stop.
+@mixin gradient-x($start-color: $gray-300, $end-color: $gray-800, $start-percent: 0%, $end-percent: 100%) {
+
+  .body{
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent);
+  }
+}

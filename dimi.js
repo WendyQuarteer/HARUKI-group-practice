@@ -8,23 +8,23 @@ function wait(ms){
 }
 function Clicked_Wendy() {
     $counterBadge = document.getElementById("counterBadge1");
-    console.log("Wendy: " + $counterBadge.textContent);
     $counterBadge.textContent = parseInt($counterBadge.textContent);
     if ($counterBadge.textContent<=4){
         $counterBadge.textContent = parseInt($counterBadge.textContent)+1;
     } else {
         window.location.href = '/index.html';
     }
+    console.log(document.getElementById('h5_Wenke').textContent + ": " + $counterBadge.textContent);
 }
 function  Clicked_Victor() {
     $counterBadge2 = document.getElementById('counterBadge2');
-    console.log("Victor: " + $counterBadge2.textContent);
     $counterBadge2.textContent = parseInt($counterBadge2.textContent);
     if ($counterBadge2.textContent>=5){
         $counterBadge2.textContent = parseInt($counterBadge2.textContent)-5;
     } else {
         window.location.href = "/mindandbody.html"
     }
+    console.log(document.getElementById('h5_victor').textContent + ": " + $counterBadge2.textContent);
 }
 
 function  Clicked_Shiva() {
@@ -37,4 +37,5 @@ function  Clicked_Shiva() {
         wait(1500);
         window.location.href = '/contact.html';
     }
+    console.log(document.getElementById('h5_Shiva').textContent + ": " + $counterBadge3.textContent);
 }
