@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css
+  " integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylecontac.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap"
@@ -52,33 +52,39 @@
     </nav>
 </div>
 <!----------------------------Nav End Here------------------------------------------>
-
-<div class="container-fluid">
-    <!------------------first row-------------------->
+<div class="pimg1">
+    <div class="ptext">
+        <span class="border">
+            Haruki Group Practice
+        </span>
+    </div>
+</div>
+<!--<div class="container-fluid">
+    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;first row&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
     <div class="row align-items-center my-4">
-        <!--------------this image is hidden for medium and smaller screens-------------->
+        &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;this image is hidden for medium and smaller screens&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
         <div class="col d-none d-md-block">
             <img src="images/imgcontact/header.jpg" class="w-100">
         </div>
-        <!--------------this image is hidden for medium and larger-------------->
+        &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;this image is hidden for medium and larger&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
         <div class="col d-block d-md-none">
 
         </div>
     </div>
-    <!------------------second row-------------------->
+    &lt;!&ndash;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;second row&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&ndash;&gt;
     <div class="row my-auto">
-        <div class="col col-md-4 text-center gmap py-auto">
-            <!--Google map-->
+        <div class="col col-md-4 text-center gmap py-auto h-100">
+            &lt;!&ndash;Google map&ndash;&gt;
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1129.2073578820564!2d4.400957232410268!3d51.22567837359643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6591c88f09d%3A0x31d6c38718baba03!2sThe%20Beacon!5e0!3m2!1sen!2sbe!4v1651157055158!5m2!1sen!2sbe"
                     frameborder="1"
                     style="border:1px">
 
             </iframe>
-            <!--Google Maps-->
+            &lt;!&ndash;Google Maps&ndash;&gt;
         </div>
         <div class="col col-md-4 text-center cntctinfo h-100 ">
 
-            <div class="h-100">
+            <div class="">
                 <h5 class="">Meet Us</h5>
                 <p class=""><img src="images/imgcontact/phone-call.png" height="16px"><a
                         href="tel:+123456789">+123456789</a></p>
@@ -97,9 +103,9 @@
 
         </div>
     </div>
-</div>
+</div>-->
 <!----------------------------- FORMS--------------------------------------->
-<div class="container align-self-center" style="margin: 10px;padding: 20px; border: 1px solid">
+<div class="container align-self-center" style="margin: 10px;padding: 10px; border: 1px solid">
     <form class="align-items-center justify-items-center" id="theform">
         <div class="row align-items-center">
             <div class="col-6 col-md-2">
@@ -125,7 +131,7 @@
         </div>
         <hr>
         <div class="row align-items-center">
-            <div class="col col-md-4">
+            <div class="col-12 col-md-4">
                 <label for="email" class="form-label">Email</label>
                 <input type="email" class="form-control" id="email" placeholder="example@somewebsite.com">
             </div>
@@ -137,7 +143,7 @@
                 <label for="phone" class="form-label">Please enter your phone number</label>
                 <input type="tel" class="form-control" id="phone" placeholder="0123456789">
             </div>
-            <div class="col col-md-4">
+            <div class="col-12 col-md-4">
                 <label for="subject" class="form-label">Why do you need our help?</label>
                 <select class="form-select w-100" aria-label="Default select" id="subject">
                     <option selected>Please choose a subject</option>
@@ -149,7 +155,7 @@
         </div>
         <hr>
         <div class="row align-items-center mb-4">
-            <div class="col">
+            <div class="col-12">
                 <label for="textarea" class="form-label">You can write down further explanation of your situation here: </label>
                 <textarea class="form-control" id="textarea" form="theform"></textarea>
             </div>
@@ -168,8 +174,8 @@
     </div>
 </footer>
 <!-- Footer -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 </html>

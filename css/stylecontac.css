@@ -8,11 +8,36 @@
 .cntctform{
     background-color: #F07167;
 }
-
-.cntctform .cntctinfo .gmap {
-
+/*----------------------PARALLEX------------------------*/
+.pimg1{
+    background-image: url(../images/imghome/p1.jpg);
+    min-height: 300px;
 }
-/*--------------this part is a failed attempt to remove arrows from age input-----------*/
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: lightyellow;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+.ptext .border {
+    background-color: #111;
+    color: lightyellow;
+    padding: 20px;
+}
+.ptext .border .trans {
+    background-color: transparent;
+}
+
+@media (max-width:568px) {
+    .pimg1 {
+        background-attachment: scroll;
+    }
+}
+/*--------------this part is a failed attempt to remove arrows from age input-----------*//*
 #age{
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -20,11 +45,11 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-/* Firefox */
+!* Firefox *!
 input[type=number] {
     -moz-appearance: textfield;
 }
-}
+}*/
 /*-----------this code is to make all the columns in row same height-----------------*/
 /*.row{
     overflow: hidden;
