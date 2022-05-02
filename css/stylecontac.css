@@ -17,6 +17,15 @@
 .row a.formbtn:hover{
     background-color: #6c584c;
 }
+.contactlink {
+    color: #806755;
+    font-weight: bold;
+}
+
+a.contactlink:hover{
+    color: #b9ca88;
+    font-weight: bolder;
+}
 
 /*----------------------PARALLAX------------------------*/
 .pimg1 {
