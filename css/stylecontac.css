@@ -14,7 +14,7 @@
 .formbtn{
     background-color: #a98467;
 }
-.row a.formbtn:hover{
+a.formbtn:hover{
     background-color: #6c584c;
 }
 .contactlink {
