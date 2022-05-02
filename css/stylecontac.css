@@ -1,12 +1,7 @@
-.gmap{
-    background-color: #FDFCDC;
-}
-.cntctinfo {
-    background-color: #FED9B7;
-}
 
-.cntctform{
-    background-color: #F07167;
+.infoimage{
+    height: 16px;
+    padding-right: 5px;
 }
 /*----------------------PARALLEX------------------------*/
 .pimg1{
@@ -36,6 +31,12 @@
     .pimg1 {
         background-attachment: scroll;
     }
+}
+.section {
+    text-align: center;
+    padding: 50px 80px;
+    margin-left: 250px;
+    margin-right: 200px;
 }
 /*--------------this part is a failed attempt to remove arrows from age input-----------*//*
 #age{
