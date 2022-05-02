@@ -1,20 +1,20 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../../../bootstrap/node_modules/bootstrap/scss/functions";
+//@import "../../../bootstrap/node_modules/bootstrap/scss/functions";
 // 2. Include any default variable overrides here
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../../../bootstrap/node_modules/bootstrap/scss/variables";
-@import "../../../bootstrap/node_modules/bootstrap/scss/mixins";
+//@import "../../../bootstrap/node_modules/bootstrap/scss/variables";
+//@import "../../../bootstrap/node_modules/bootstrap/scss/mixins";
 
 // 4. Include any optional Bootstrap components as you like
 //@import "../../../bootstrap/node_modules/bootstrap/scss/root";
 //@import "../../../bootstrap/node_modules/bootstrap/scss/reboot";
 //@import "../../../bootstrap/node_modules/bootstrap/scss/type";
 //@import "../../../bootstrap/node_modules/bootstrap/scss/images";
-@import "../../../bootstrap/node_modules/bootstrap/scss/containers";
+//@import "../../../bootstrap/node_modules/bootstrap/scss/containers";
 //@import "../../../bootstrap/node_modules/bootstrap/scss/grid";
 
-@import "stylehome.css";
+//@import "stylehome.css";
 
 $light-background:        #f2ece4;
 $light-text:              #036;
