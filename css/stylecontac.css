@@ -3,7 +3,24 @@
     height: 16px;
     padding-right: 5px;
 }
-/*----------------------PARALLEX------------------------*/
+.formcontainer{
+    border-top: 1px solid ;
+    border-bottom: 1px solid ;
+    padding: 10px;
+}
+/*----------------------PARALLAX------------------------*/
+.pimg1 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parallax
+    scroll = normal
+     */
+    background-attachment: fixed;
+}
 .pimg1{
     background-image: url(../images/imghome/p1.jpg);
     min-height: 300px;
