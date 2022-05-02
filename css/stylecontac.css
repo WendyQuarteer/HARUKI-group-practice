@@ -1,13 +1,23 @@
 
-.infoimage{
+.infoimage {
     height: 16px;
     padding-right: 5px;
 }
-.formcontainer{
-    border-top: 1px solid ;
-    border-bottom: 1px solid ;
+
+.formcontainer {
+    background-color: #f0ead2;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     padding: 10px;
 }
+
+.formbtn{
+    background-color: #a98467;
+}
+.row a.formbtn:hover{
+    background-color: #6c584c;
+}
+
 /*----------------------PARALLAX------------------------*/
 .pimg1 {
     position: relative;
@@ -15,16 +25,14 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /*
-    fixed = parallax
-    scroll = normal
-     */
     background-attachment: fixed;
 }
-.pimg1{
+
+.pimg1 {
     background-image: url(../images/imghome/p1.jpg);
     min-height: 300px;
 }
+
 .ptext {
     position: absolute;
     top: 50%;
@@ -35,46 +43,21 @@
     letter-spacing: 8px;
     text-transform: uppercase;
 }
+
 .ptext .border {
     background-color: #111;
     color: lightyellow;
     padding: 20px;
 }
+
 .ptext .border .trans {
     background-color: transparent;
 }
 
-@media (max-width:568px) {
+@media (max-width: 568px) {
     .pimg1 {
         background-attachment: scroll;
     }
 }
-.section {
-    text-align: center;
-    padding: 50px 80px;
-    margin-left: 250px;
-    margin-right: 200px;
-}
-/*--------------this part is a failed attempt to remove arrows from age input-----------*//*
-#age{
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
 
-!* Firefox *!
-input[type=number] {
-    -moz-appearance: textfield;
-}
-}*/
-/*-----------this code is to make all the columns in row same height-----------------*/
-/*.row{
-    overflow: hidden;
-}
-
-[class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
-}*/
-/*---------------------------End of the code-----------------------------------------*/
+/*----------------------PARALLAX End------------------------*/
