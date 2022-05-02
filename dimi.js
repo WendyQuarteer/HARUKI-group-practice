@@ -1,41 +1,16 @@
-const delay = ms => new Promise(res => setTimeout(res, ms));
-function wait(ms){
-    var start = new Date().getTime();
-    var end = start;
-    while(end < start + ms) {
-        end = new Date().getTime();
-    }
+/*
+* Function created to catch the mouse hovering over each card.
+*       You use it by passing two variables to it and executing it.
+*       Example: hCard("dimi", "dhover")
+*/
+function hCard($user, $element){
+    console.log("Hover functiop works for " + $user);
+    let $hov = document.getElementById($element);
+    $hov.textContent = parseInt($hov.textContent) + 1;
+    $hov = null;
 }
-function Clicked_Wendy() {
-    $counterBadge = document.getElementById("counterBadge1");
-    $counterBadge.textContent = parseInt($counterBadge.textContent);
-    if ($counterBadge.textContent<=4){
-        $counterBadge.textContent = parseInt($counterBadge.textContent)+1;
-    } else {
-        window.location.href = '/index.html';
-    }
-    console.log(document.getElementById('h5_Wenke').textContent + ": " + $counterBadge.textContent);
-}
-function  Clicked_Victor() {
-    $counterBadge2 = document.getElementById('counterBadge2');
-    $counterBadge2.textContent = parseInt($counterBadge2.textContent);
-    if ($counterBadge2.textContent>=5){
-        $counterBadge2.textContent = parseInt($counterBadge2.textContent)-5;
-    } else {
-        window.location.href = "/mindandbody.html"
-    }
-    console.log(document.getElementById('h5_victor').textContent + ": " + $counterBadge2.textContent);
-}
+function hoverCardWenke(){hCard("wenke", "whover")}
+function hoverCardVictor(){hCard("victor", "vhover")}
+function hoverCardShiva(){hCard("shiva", "shover")}
+function hoverCardDimi(){hCard("dimi", "dhover")}
 
-function  Clicked_Shiva() {
-    $counterBadge3 = document.getElementById('counterBadge3');
-    for (let i=5;i>0;i--) {
-        wait(300);
-        $counterBadge3.innerText = parseInt(i);
-    }
-    if ($counterBadge3.textContent == 1){
-        wait(1500);
-        window.location.href = '/contact.html';
-    }
-    console.log(document.getElementById('h5_Shiva').textContent + ": " + $counterBadge3.textContent);
-}
