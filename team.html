@@ -17,77 +17,115 @@
 </head>
 <script src="dimi.js"></script>
 
-<body style="background: navajowhite">
+<div class = "bg-light"><body>
+<!--Navigation bar-->
+<div class="container-flex">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand">
+            <img class="d-inline-block"
+                 src="images/imghome/logo.jpg" alt="logo-haruki" width="100px" height="100px"/>
+        </a>
+        <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                class="navbar-toggler"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" aria-current="page">GROUP PRACTICE HARUKI</a>
+                </li>
+                <li class="nav-item2 active">
+                    <!--href="mind and body page to be inserted here as link to the page"-->
+                    <a href="#" class="nav-link">MIND AND BODY</a>
+                </li>
+                <li class="nav-item3 active">
+                    <!--href="team page to be inserted here as link to the page"-->
+                    <a href="#" class="nav-link">TEAM</a>
+                </li>
+                <li class="nav-item4 active">
+                    <!--href="contact page to be inserted here as link to the page"-->
+                    <a href="#" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!--navigation-bar-->
+
 <br>
-
-<div class="container bg-gradient bg-opacity-50"" align="center" id="mycards">
-    <div class="row gx-2">
-        <div class="col-md-3 py-1">
-            <div class="card shadow" style="width: 17rem;background-color: lightgoldenrodyellow">
+<div class="container bg-gradient bg-opacity-50" align="center" id="mycards">
+    <div class="row gx-sm-2 h-100">
+        <div class="col-md-3 gy-2">
+            <div class="card">
                 <img src="images/dimi1.jpg" class="card-img-top" alt="Wenke">
-                <div class="card-body">
-                    <h5 class="card-title" id="h5_Wenke">Wenke</h5>
-                    <p class="card-text"><h6><i>web dev @ haruki</i></h6></p>
-                    <div class="card-textarea">creator of the general home page</div>
-                    <a href="#" class="btn btn-success rounded-pill"
-                       onclick="Clicked_Wendy()"
-                       id="WendyClick">Home <span
-                            class="badge bg-secondary" id="counterBadge1">1</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 .gy-2">
-            <div class="card shadow" style="width: 17rem;background-color: lightgoldenrodyellow">
-                <img src="images/dimi1.jpg" class="card-img-top" alt="Victor">
-                <div class="card-body">
-                    <h5 class="card-title" id="h5_victor">Victor</h5>
-                    <p class="card-text"><h6><i>web dev @ haruki </i></h6></p>
-                    <div class="card-textarea">Victor is silent but deadly</div>
-                    <a href="#" class="btn bg-dark rounded-pill" onclick="Clicked_Victor()" id="VictorClick" style="color: yellow">Mind
-                        and Body <span class="badge bg-primary" id="counterBadge2">30</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 .gy-2">
-            <div class="card shadow" style="width: 17rem;background-color: lightgoldenrodyellow">
-                <img src="images/dimi1.jpg" class="card-img-top" alt="Shiva">
-                <div class="card-body">
-                    <h5 class="card-title" id="h5_Shiva">Shiva</h5>
-                    <p class="card-text"><h6><i>web dev @ haruki</i></h6></p>
-                    <div class="card-textarea">creator of the contact page</div>
-                    <a href="#" class="btn btn-primary rounded-pill" onclick="Clicked_Shiva()" id="ShivaClick">contact
-                        <span class="badge bg-secondary" id="counterBadge3" style="color:MediumSeaGreen;">5</span></a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3 .gy-2">
-            <div class="card shadow" style="width: 17rem;background-color: lightgoldenrodyellow">
-                <img src="images/dimi1.jpg" class="card-img-top" alt="Dimi">
-                <div class="card-body">
-                    <h5 class="card-title">Dimi</h5>
-                    <p class="card-text"><h6><i>web dev @ haruki</i></h6></p>
-                    <div class="card-textarea">for more information click the link below</div>
-                    <a href="https://www.youtube.com/watch?v=_aZ2bdnG97A" class="btn rounded-pill" target="_blank">
-<!--                        <button class="btn btn-primary" type="button">-->
-                            Team
-                            <span class="spinner-grow spinner-grow-md" role="status" aria-hidden="true"></span>
-<!--                        </button>-->
-                            button
-                    </a>
+                <div class="card-body" onmouseover="hoverCardWenke()">
+                    <h5 class="card-title" id="h5_Wenke">Wenke
 
+                        <span class="badge bg-primary rounded-pill">bodycount<span class="badge bg-secondary" id="whover">0</span></span>
+                    </h5>
+                    <p class="card-text"><h6><i>web dev @ haruki</i></h6></p>
+                    <div class="card-textarea">
+                        Haruki is named after Wenke's dog! She's great to have on your team.
+                        author @ home page.</div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <br>
-            <img src="images/cour3.jpg" alt="our magical tree for you to see" width="95%">
+        <div class="col-md-3 gy-2">
+            <div class="card">
+                <img src="images/dimi1.jpg" class="card-img-top" alt="Victor">
+                <div class="card-body" onmouseover="hoverCardVictor()">
+                    <h5 class="card-title" id="h5_victor">Victor
+
+                        <span class="badge bg-primary rounded-pill">bodycount <span class="badge bg-secondary" id="vhover">0</span></span>
+                    </h5>
+                    <p class="card-text"><h6><i>web dev @ haruki </i></h6></p>
+                    <div class="card-textarea">
+                        Victor is the silent hard working type and is not afraid to work a double shift
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="col-md-3 gy-2">
+            <div class="card">
+                <img src="images/dimi1.jpg" class="card-img-top" alt="Shiva">
+                <div class="card-body" onmouseover="hoverCardShiva()">
+                    <h5 class="card-title" id="h5_Shiva">Shiva
+
+                        <span class="badge bg-primary rounded-pill">bodycount <span class="badge bg-secondary" id="shover">0</span></span>
+                    </h5>
+                    <p class="card-text"><h6><i>web dev @ haruki</i></h6></p>
+                    <div class="card-textarea">
+                        Shiva pays attention to details. She's a great person to have on your team.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 gy-2">
+            <div class="card">
+                <img src="images/dimi1.jpg" class="card-img-top" alt="Dimi">
+                <div class="card-body" onmouseover="hoverCardDimi()">
+                    <h5 class="card-title">Dimi
+
+                        <span class="badge bg-primary rounded-pill">bodycount <span class="badge bg-secondary" id="dhover">0</span></span>
+                    </h5>
+                    <p class="card-text"><h6><i>web dev @ haruki</i></h6></p>
+                    <div class="card-textarea">
+                        Dimi will get the job done on time, on budget and on scope. Dimi is also the creator of this team page
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br>
 </div>
 <!-- Footer -->
-<footer class="page-footer font-small grey" style="background: navajowhite">
+<footer class="page-footer font-small $light-text" style="background: navajowhite">
     <div class="footer-copyright text-center py-3">Copyright © 2022 All rights reserved * This template is made with
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
              viewBox="0 0 16 16">
@@ -98,7 +136,6 @@
 </footer>
 <!-- Footer -->
 
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -108,5 +145,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</body>
+</body></div>
 </html>

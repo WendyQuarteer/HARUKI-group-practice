@@ -1,50 +1,57 @@
-@keyframes spinner-border {
-  to {
-    transform: rotate(360deg) /* rtl:ignore */;
+@import "stylehome.css";
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container-sm, .container {
+    max-width: 540px;
   }
 }
-@keyframes spinner-grow {
-  0% {
-    opacity: 50;
-    transform: scale(0);
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
   }
-  50% {
-    opacity: 50;
-    transform: scale(2);
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
   }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+.card {
+  background-color: navajowhite;
+  font-size: small;
 }
 .card:hover {
+  background-color: #dee2e6;
   color: blueviolet;
   font-size: large;
 }
-.card:hover .btn {
-  animation-name: inline-utjqw6a;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  background-color: white;
-  color: red;
-  font-size: larger;
-}
-.card:hover .btn::after {
-  background-color: #F07167;
-}
-@keyframes inline-utjqw6a {
-  from {
-    background-color: yellow;
-  }
-  to {
-    background-color: green;
-  }
-}
-
-.btn:hover {
-  background-color: yellow;
-  color: red;
-}
 
 .badge {
+  font-size: x-small;
+  background-color: red;
   color: yellow;
-  background-color: dimgray;
 }
 
 /*# sourceMappingURL=styleteam.css.map */
