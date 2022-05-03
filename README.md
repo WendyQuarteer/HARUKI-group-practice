@@ -151,9 +151,6 @@ Here's the link to our project:
 
 ![Here's a funny image](images/imghome/funny pic.webp)
 
-
-
-
 ---
 1. so first create a new branch and check it out
     ```bash
