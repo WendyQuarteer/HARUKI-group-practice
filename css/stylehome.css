@@ -1,1 +1,73 @@
-/*to be deleted or keep all css-files*/
+.pimg1, .pimg2, .pimg3 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parallax
+    scroll = normal
+     */
+    background-attachment: fixed;
+}
+.pimg1{
+    background-image: url(../images/imghome/p1.jpg);
+    min-height: 300px;
+}
+.pimg2{
+    background-image: url(../images/imghome/p2.jpg);
+    min-height: 300px;
+}
+.pimg3{
+    background-image: url(../images/imghome/p3.jpg);
+    min-height: 300px;
+}
+
+.parallex-text {
+    text-align: center;
+    padding: 50px 80px;
+}
+/*
+.section-dark {
+    background-color: #;
+    color: #;
+    }
+.section-dark {
+    background-color: #;
+    color: #;
+    }
+ */
+.ptext {
+    position: relative;
+    top: 120px;
+    width: 100%;
+    text-align: center;
+    color: lightyellow;
+    font-size: 27px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.ptext .border {
+    background-color: #111;
+    color: lightyellow;
+    padding: 20px;
+}
+.ptext .border .trans {
+    background-color: transparent;
+}
+
+@media (max-width:568px) {
+    .pimg1, .pimg2, .pimg3 {
+        background-attachment: scroll;
+    }
+}
+.disciplines {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+/*------------CAROUSEL-STYLE--------------------------------------------*/
+.carousel-item {
+    width: 100%;
+    heigth: 50px
+}

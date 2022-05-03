@@ -1,3 +1,6 @@
+.navbar {
+    background-color: bisque;
+}
 .navbar-nav {
     float:none;
     margin:5px auto;
@@ -7,8 +10,22 @@
     padding-left:35px;
     padding-right:35px;
 }
+/*footer*/
+.page-footer {
+    background-color: bisque;
+}
+/*
+@media (max-width: 768px) {
+    .navbar-nav {
+        height: 1px;
+        margin: 0 10px;
+        background-color: #6c584c;
+    }
+}
+*/
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-size: large;
     color: #000033;
+    background-color: lightyellow;
 }

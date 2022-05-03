@@ -1,0 +1,17 @@
+.card {
+  background-color: navajowhite;
+  font-size: small;
+}
+.card:hover {
+  background-color: #dee2e6;
+  color: blueviolet;
+  font-size: large;
+}
+
+.badge {
+  font-size: x-small;
+  background-color: red;
+  color: yellow;
+}
+
+/*# sourceMappingURL=styleteam.css.map */

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-          crossorigin="anonymous">
-    <link rel="stylesheet" href="css/stylecontac.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+          integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylecontact.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Open+Sans:ital,wght@0,300;0,500;1,700&display=swap"
           rel="stylesheet">
 </head>
 <body>
-<!--------------------------navigation bar------------------------------------------>
+<!----------------------------------navigation bar------------------------------------------>
 <div class="container-flex">
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand">
             <img class="d-inline-block"
                  src="images/imghome/logo.jpg" alt="logo-haruki" width="176" height="186"/>
@@ -33,86 +33,79 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" aria-current="page">GROUP PRACTICE HARUKI</a>
+                    <a href="/index.html" class="nav-link" aria-current="page">HARUKI HOME</a>
                 </li>
                 <li class="nav-item2 active">
                     <!--href="mind and body page to be inserted here as link to the page"-->
-                    <a href="#" class="nav-link">MIND AND BODY</a>
+                    <a href="/mindandbody.html" class="nav-link">MIND AND BODY</a>
                 </li>
                 <li class="nav-item3 active">
                     <!--href="team page to be inserted here as link to the page"-->
-                    <a href="#" class="nav-link">TEAM</a>
+                    <a href="/team.html" class="nav-link">TEAM</a>
                 </li>
                 <li class="nav-item4 active">
                     <!--href="contact page to be inserted here as link to the page"-->
-                    <a href="#" class="nav-link">CONTACT</a>
+                    <a href="/contact.html" class="nav-link">CONTACT</a>
                 </li>
             </ul>
         </div>
     </nav>
 </div>
 <!----------------------------Nav End Here------------------------------------------>
-
+<!-------------------------------PARALLAX------------------------------------------->
+<div class="pimg1">
+    <div class="ptext">
+        <span class="border">
+            Contact Information
+        </span>
+    </div>
+</div>
+<!------------------------------------Page Content------------------------------------->
 <div class="container-fluid">
-    <!------------------first row-------------------->
-    <div class="row align-items-center my-4">
-        <!--------------this image is hidden for medium and smaller screens-------------->
-        <div class="col d-none d-md-block">
-            <img src="images/imgcontact/header.jpg" class="w-100">
-        </div>
-        <!--------------this image is hidden for medium and larger-------------->
-        <div class="col d-block d-md-none">
-
+    <div class="row text-center my-2">
+        <div class="col col-md-4 offset-md-4">
+            <h4 class="">Contact Us</h4>
+            <p class=""><img class="infoimage" src="images/imgcontact/phone-call.png" alt="phone icon"><a
+                    href="tel:+123456789" class="contactlink">+123456789</a></p>
+            <p class=""><img class="infoimage" src="images/imgcontact/email.png" alt="image icon"><a
+                    href="mailto:info@haruki.com" class="contactlink">Info@Haruki.com</a></p>
+            <p class=""><img class="infoimage" src="images/imgcontact/location.png" alt="location icon"><a
+                    href="https://goo.gl/maps/Y5ooXdghH2uPH9Z59" target="_blank" class="contactlink">The Beacon,
+                Sint-Pietersvliet, Antwerp</a></p>
+            <hr>
         </div>
     </div>
-    <!------------------second row-------------------->
-    <div class="row my-auto">
-        <div class="col col-md-4 text-center gmap py-auto">
-            <!--Google map-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1129.2073578820564!2d4.400957232410268!3d51.22567837359643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3f6591c88f09d%3A0x31d6c38718baba03!2sThe%20Beacon!5e0!3m2!1sen!2sbe!4v1651157055158!5m2!1sen!2sbe"
-                    frameborder="1"
-                    style="border:1px">
-
-            </iframe>
-            <!--Google Maps-->
+    <div class="row text-center my-2">
+        <div class="col col-md-4 offset-md-4">
+            <h4>Opening Hours</h4>
+            <p> Monday to Friday from 9:00 to 17:00 </p>
+            <hr>
         </div>
-        <div class="col col-md-4 text-center cntctinfo h-100 ">
-
-            <div class="h-100">
-                <h5 class="">Meet Us</h5>
-                <p class=""><img src="images/imgcontact/phone-call.png" height="16px"><a
-                        href="tel:+123456789">+123456789</a></p>
-                <p class=""><img src="images/imgcontact/email.png" height="16px"><a
-                        href="mailto:somthing@somthing.com">Somthing@somthing.com</a></p>
-                <p class=""><img src="images/imgcontact/location.png" height="16px">Somewhere in Antwerp
-                    2000</p>
-            </div>
-
-        </div>
-        <div class="col col-md-4 text-center cntctform h-100">
-            <div class="">
-                <h5 class="">You can Also...</h5>
-                <p class="">Reach us by filling out the contact form below.</p>
-            </div>
-
+    </div>
+    <div class="row text-center my-2">
+        <div class="col col-md-4 offset-md-4">
+            <h5>You Can Also ...</h5>
+            <p> Reach us by filling out the contact form below. </p>
+            <hr>
         </div>
     </div>
 </div>
-<!----------------------------- FORMS--------------------------------------->
-<div class="container align-self-center" style="margin: 10px;padding: 20px; border: 1px solid">
-    <form class="align-items-center justify-items-center" id="theform">
+<!------------------------------------ Page Content End------------------------------------->
+<!----------------------------------- FORM --------------------------------------->
+<div class="container-fluid align-self-center formcontainer">
+    <form class="align-items-center justify-content-center" id="theform" method="get">
         <div class="row align-items-center">
             <div class="col-6 col-md-2">
                 <label for="firstname">First Name</label>
             </div>
             <div class="col-6 col-md-3">
-                <input class="w-100 form-control" type="text" placeholder="Your name here" id="firstname">
+                <input class="w-100 form-control" type="text" placeholder="Your name here" id="firstname" required>
             </div>
             <div class="col-6 col-md-2">
                 <label for="lastname">Last Name</label>
             </div>
             <div class="col-6 col-md-3">
-                <input class="w-100 form-control" type="text" placeholder="Your last name here" id="lastname">
+                <input class="w-100 form-control" type="text" placeholder="Your last name here" id="lastname" required>
             </div>
             <div class="col-6 col-md-2">
                 <select class="form-select w-100" aria-label="Default select">
@@ -125,51 +118,63 @@
         </div>
         <hr>
         <div class="row align-items-center">
-            <div class="col col-md-4">
+            <div class="col-12 col-md-4">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="example@somewebsite.com">
+                <input type="email" class="form-control" id="email" placeholder="example@somewebsite.com" required>
             </div>
             <div class="col-5 col-md-1">
                 <label for="age" class="form-label">Your age</label>
-                <input type="number" class="form-control" id="age" placeholder="18" maxlength="2" min="18" max="99">
+                <input type="number" class="form-control" id="age" placeholder="18" maxlength="2" min="18" max="99" required>
             </div>
             <div class="col-7 col-md-3">
                 <label for="phone" class="form-label">Please enter your phone number</label>
-                <input type="tel" class="form-control" id="phone" placeholder="0123456789">
+                <input type="tel" class="form-control" id="phone" placeholder="0123456789" required>
             </div>
-            <div class="col col-md-4">
+            <div class="col-12 col-md-4">
                 <label for="subject" class="form-label">Why do you need our help?</label>
                 <select class="form-select w-100" aria-label="Default select" id="subject">
                     <option selected>Please choose a subject</option>
-                    <option value="1">sub 1</option>
-                    <option value="2">sub 2</option>
-                    <option value="3">sub 3</option>
+                    <option value="1">Osteopathy</option>
+                    <option value="2">Acupuncture</option>
+                    <option value="3">Hypnotherapy</option>
+                    <option value="4">Cupping</option>
                 </select>
             </div>
         </div>
         <hr>
         <div class="row align-items-center mb-4">
-            <div class="col">
-                <label for="textarea" class="form-label">You can write down further explanation of your situation here: </label>
+            <div class="col-12">
+                <label for="textarea" class="form-label">You can write down further explanation of your situation
+                    here: </label>
                 <textarea class="form-control" id="textarea" form="theform"></textarea>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="col col-md-4 offset-md-4 text-center">
+            <button type="submit" class="btn formbtn">Submit</button>
+        </div>
     </form>
 </div>
+<!----------------------------------- FORM End --------------------------------------->
 <!----------------------------- Footer ------------------------------------->
-<footer class="page-footer font-small grey bg-light">
-    <div class="footer-copyright text-center py-3">Copyright © 2022 All rights reserved * This template is made with
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
-             viewBox="0 0 16 16">
-            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+<footer class="page-footer font-small grey ">
+    <div class="footer-copyright text-center py-3">Copyright © 2022 All rights reserved  * This template is made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+    </svg> by Dimi, Shiva, Wendy, Victor *
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
         </svg>
-        by Dimi, Shiva, Wendy, Victor *
+        <a href="tel:+123456789" class="contactlink">+123456789</a>
     </div>
 </footer>
-<!-- Footer -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+<!------------------------------ Footer End------------------------------------>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+        integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
         crossorigin="anonymous"></script>
 </body>
 </html>
