@@ -17,16 +17,17 @@ So now it was time to pass the final HTML/CSS Test and step it up by
 * Learning to complete a project, so it can be delivered to a client.
 
 ## What?
-We Invented a company and thought of pages this company might need.
-The pages were divided so that each person would have to design a page.
+We Invented a company called Haruki and all agreed this would be a group practice which his kind oh a holistic approach. 
+We thought of pages this company might need. The pages were divided so that each person would have to design a page.
 In the end, all pages were joined together to result in a complete, fully functioning
-website, ready to be delivered to a client.
+website, ready to be delivered to a client (except for some more changes to be made).
+
+It all sounds pretty simple, but let me tell you, we sure had our necessary struggles along the way. 
 
 ## The Project
 We created a company called Haruki Group Practice.
 The home-page speaks for itself:
-[](picture homepage)
-
+![Preview of our home-page](images/imghome/Preview-Haruki.jpg)
 
 ## Want to See more?
 Here's the link to our project:
