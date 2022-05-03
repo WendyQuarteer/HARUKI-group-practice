@@ -30,7 +30,7 @@ The home-page speaks for itself:
 
 ## Want to See more?
 Here's the link to our project:
-[](link to website)
+[link to website](https://wendyquarteer.github.io/HARUKI-group-practice/)
 
 
 
