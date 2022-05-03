@@ -1,6 +1,10 @@
 .card {
   background-color: navajowhite;
   font-size: small;
+  padding: 1.5em 0.5em 0.5em;
+  border-radius: 2em;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .card:hover {
   background-color: #dee2e6;
@@ -12,6 +16,13 @@
   font-size: x-small;
   background-color: red;
   color: yellow;
+}
+
+.img {
+  width: 65%;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=styleteam.css.map */
