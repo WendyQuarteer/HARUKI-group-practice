@@ -27,23 +27,13 @@
     text-align: center;
     padding: 50px 80px;
 }
-/*
-.section-dark {
-    background-color: #;
-    color: #;
-    }
-.section-dark {
-    background-color: #;
-    color: #;
-    }
- */
 .ptext {
     position: relative;
     top: 120px;
     width: 100%;
     text-align: center;
     color: lightyellow;
-    font-size: 27px;
+    font-size: 20px;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
